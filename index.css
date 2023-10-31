@@ -1,0 +1,40 @@
+.see{
+    color:white !important;
+    background-color:red !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-weight: bold !important;
+}
+.se{
+    background-color:green !important;
+}
+.se:hover{
+    background-color: white !important;
+    color:green !important;
+}
+.cat{
+    margin-bottom: 30px !important;
+}
+
+.see:hover{
+    background-color:white !important;
+    color:red !important;
+}
+.ab{
+    color: white !important;
+}
+.ab:hover{
+    color: red !important;
+}
+.navbar{
+    background-color: green !important;
+}
+.footer{
+    background-color: green !important;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.web{
+    font-family: 'Times New Roman', Times, serif;
+}
