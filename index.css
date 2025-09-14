@@ -1,40 +1,59 @@
-.see{
-    color:white !important;
-    background-color:red !important;
-    justify-content: center !important;
-    align-items: center !important;
-    font-weight: bold !important;
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
 }
-.se{
-    background-color:green !important;
-}
-.se:hover{
-    background-color: white !important;
-    color:green !important;
-}
-.cat{
-    margin-bottom: 30px !important;
+section {
+  padding-top: 80px;
 }
 
-.see:hover{
-    background-color:white !important;
-    color:red !important;
+/* Navbar */
+.navbar {
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
 }
-.ab{
-    color: white !important;
+.navbar .nav-link {
+  color: #fff;
+  transition: color .3s;
 }
-.ab:hover{
-    color: red !important;
+.navbar .nav-link:hover {
+  color: #f0ad4e;
 }
-.navbar{
-    background-color: green !important;
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+              url('skphoto.jpeg') center/cover no-repeat;
 }
-.footer{
-    background-color: green !important;
+
+/* Cards */
+.skill-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform .3s, box-shadow .3s;
 }
-body{
-    font-family: 'Times New Roman', Times, serif;
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
-.web{
-    font-family: 'Times New Roman', Times, serif;
+.skill-card img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  padding: 40px 0;
+}
+.footer a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color .3s;
+}
+.footer a:hover {
+  color: #f0ad4e;
 }
