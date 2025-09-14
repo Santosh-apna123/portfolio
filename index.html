@@ -1,370 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>My Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="index.css">
-</head>
+  <title>Santosh Kumar | Portfolio</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-
-
-  <nav class="navbar navbar-expand-sm ">
-    <div class="container-lg">
-      <a class="navbar-brand fs-3  text-white" href="#">
-        Santosh
-      </a>
-      <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon btn btn-primary"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="collapsibleNavbar">
-        <ul class="navbar-nav ms-auto ">
-          <li class="nav-item">
-            <a class="nav-link  me-3 fs-4 ab" href="#ef">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  me-3 fs-4 ab " href="#bc">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  me-3 fs-4 ab" href="#cd">Skill</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  me-3 fs-4 ab" href="#de">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  me-3 fs-4 ab  " href="#gh">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <div class="row">
-      <div class=" col-lg-6">
-        <h2 class="pt-3 fw-bold fs-1">Hello, I’m</h2>
-        <h2 class="text-success fw-bold  pt-1">Santosh Kumar </h2>
-        <h2 class="pt-2 fw-bold fs-1" id="ef">Php Web Developer
-        </h2>
-        <p class="fs-2 ps-1">I am Currently Working as a PHP Web Developer in Artek Enterprises Pvt. Ltd.</p>
-        <a href="#"><button type="button" class="btn btn-danger fs-3 p-1 fw-bold se">Hire me</button></a>
+    <a class="navbar-brand fw-bold text-white" href="#">Santosh</a>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Hero Section ===== -->
+<header id="home" class="hero d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-3 fw-bold mb-3">Hello, I’m <span class="text-warning">Santosh Kumar</span></h1>
+    <p class="lead mb-4">PHP Web Developer | Designer | Problem Solver</p>
+    <a href="#contact" class="btn btn-lg btn-warning text-dark fw-bold px-5">Hire Me</a>
+  </div>
+</header>
+
+<!-- ===== About ===== -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4">
+        <img src="skphoto.jpeg" alt="Santosh" class="img-fluid rounded-4 shadow-lg">
       </div>
-
-
-      <div class=" col-lg-6">
-        <img class="pt-2 rounded-circle p-1" src="skphoto.jpeg" alt="Northern Lights" class="img-fluid" height="400px"
-          width="100%">
-
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">About Me</h2>
+        <h4 class="text-primary fw-bold mb-3">Developer & Designer</h4>
+        <p>Hello Everyone, I am Santosh Kumar from Bihar and I am a PHP + Bootstrap web developer. 
+           I provide clean code and pixel-perfect design, focusing on responsive layouts and 
+           scalable solutions. I love crafting user-friendly experiences and solving real-world 
+           problems with elegant code.</p>
       </div>
     </div>
   </div>
+</section>
 
-  <div class="container mt-5">
-    <div class="row">
-
-      <div class=" col-lg-6 p-3">
-        <img class="pt-2  p-1" src="skphoto.jpeg" alt="Northern Lights" class="img-fluid" height="400px" width="100%">
-
+<!-- ===== Skills ===== -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">My Skills</h2>
+    <div class="row g-4">
+      <!-- Repeat card pattern for each skill -->
+      <div class="col-md-4">
+        <div class="card skill-card h-100">
+          <img src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/html.jpg" class="card-img-top" alt="HTML5">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">HTML5</h5>
+            <p class="card-text">Structuring web pages with semantic elements and clean markup.</p>
+          </div>
+        </div>
       </div>
-
-      <div class=" col-lg-6">
-        <h2 class="pt-3 fw-bold fs-1" id="bc">About me</h2>
-        <h2 class="text-primary fw-bold  pt-1">Developer And Designer </h2>
-
-        <p class=" fs-5">Hello Everyone, I am Santosh Kumar from bihar and I am php bootstraps web developer. I can
-          provide clean code and pixel perfect design. I also make the website more & more interactive a responsive
-          design make your website more accessible to all user regardless of their device. Skilled in technology
-          innovation's, brand building and all phases of the Web development lifecycle with an expert in translating
-          business requirements into technical solutions and fanatical about quality, usability, security, and
-          scalability. Dealing with and resolving problems and issues which arise.</p>
-
+      <div class="col-md-4">
+        <div class="card skill-card h-100">
+          <img src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/CSS%203.png" class="card-img-top" alt="CSS3">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">CSS3</h5>
+            <p class="card-text">Beautiful, responsive styling with modern CSS features and animations.</p>
+          </div>
+        </div>
       </div>
+      <div class="col-md-4">
+        <div class="card skill-card h-100">
+          <img src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/bootstraps.jpg" class="card-img-top" alt="Bootstrap">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">Bootstrap 5</h5>
+            <p class="card-text">Rapid UI development using the leading responsive framework.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more skills as needed -->
     </div>
   </div>
+</section>
 
-  <h2 class="text-center mt-5 fw-bold">what Actually</h2>
-  <h2 class="text-center mt-2 fw-bold text-primary">I love to Do</h2>
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class=" col-lg-4 pb-2">
-        <div class="card">
-          <img class="card-img-top" src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/dev.webp" alt="Card image"
-            style="width:100%">
+<!-- ===== Projects ===== -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card skill-card h-100">
+          <img src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/20portfolio_202.jpg" class="card-img-top" alt="Portfolio">
           <div class="card-body">
-            <h4 class="card-title text-primary fw-bold">Web Development</h4>
-            <p class="card-text fs-5 ms-2 web">Web Development Refers To The Creating, Building, And Maintaining Of
-              Websites. It Includes Aspects Such As Web Design, Web Publishing, Web Programming, And Database
-              Management.</p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se p-1 text-center">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see fw-bold ">Contact me</a>
+            <h5 class="card-title text-primary fw-bold">Multiple Portfolio Designs</h5>
+            <p class="card-text">Custom personal portfolio templates built with HTML, CSS, and PHP.</p>
           </div>
         </div>
       </div>
-      <div class=" col-lg-4 pb-2">
-        <div class="card">
-          <img class="card-img-top" src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/webdesign.jpg"
-            alt="Card image" style="width:100%">
+      <div class="col-md-4">
+        <div class="card skill-card h-100">
+          <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" class="card-img-top" alt="Student Info">
           <div class="card-body">
-            <h4 class="card-title text-primary fw-bold">Web Design</h4>
-            <p class="card-text fs-5 web">Web Design Refers To The Design Of Websites That Are Displayed On The
-              Internet.
-              It Usually Refers To The User Experience Aspects Of Website Development Rather Than Software Development
-            </p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see fw-bold ">Contact me</a>
+            <h5 class="card-title text-primary fw-bold">Student Information System</h5>
+            <p class="card-text">Full-featured web app for managing student data and records.</p>
           </div>
         </div>
       </div>
-      <div class=" col-lg-4 pb-2">
-        <div class="card">
-          <img class="card-img-top" src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/dev.webp" alt="Card image"
-            style="width:100%">
+      <div class="col-md-4">
+        <div class="card skill-card h-100">
+          <img src="https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg?w=2000" class="card-img-top" alt="Ecommerce">
           <div class="card-body">
-            <h4 class="card-title text-primary fw-bold">Php Web Development</h4>
-            <p class="card-text fs-5 web ">PHP Web Development Is The Process Of Creating Dynamic And Interactive Web
-              Pages
-              Using PHP, A Server-Side Scripting Language That Is Widely Used, Free, And Efficient12. PHP Can Also
-              Work With Different Database</p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see fw-bold ">Contact me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mt-5">
-    <div class="row  ">
-      <div class=" col-lg-4 ">
-
-        <h4 class=" fw-bold   ps-3 ms-5 pt-2 ">Work Experience</h4>
-        <p class=" fs-5 ps-3 pe-4 ms-5 web">I have around 1.5 Years of industry work experience with developed more then
-          10 static websites and Dynamic Website and currently working as PHP Bootstarps web developer</p>
-      </div>
-
-
-
-      <div class=" col-lg-4">
-        <h4 class=" fw-bold ps-3 ms-5 pt-2 ">Education</h4>
-        <p class=" fs-5 ps-3 pe-4 ms-5 web">Completed my Graduation in Bachelors in computer applications(B.C.A) from
-          BRABU University - Sitamarhi.</p>
-      </div>
-      <div class=" col-lg-4">
-        <h4 class=" fw-bold ps-3 ms-5 pt-2 web ">Hobbies</h4>
-        <p class=" fs-5 ps-3 ms-5 pt-2 ">Coding<br>
-          Web Designing<br>
-          Reading<br>
-          Writting</p>
-      </div>
-    </div>
-  </div>
-  <h2 class="text-center mt-5 fw-bold fs-1" id="cd">My Skills</h2>
-  <h2 class="text-center mt-5 fw-bold">Known programming language</h2>
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class=" col-lg-4 pb-2 ">
-        <div class="card">
-          <img class="card-img-top" src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/html.jpg" alt="Card image"
-            style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title text-primary fw-bold">Html5</h4>
-            <p class="card-text fs-5 ms-2 web">Html Is Used For Structuring Web Pages With Tags And Elements, We Can
-              Define The Headings, Paragraphs, And Other Contents Of A Web Page. Basically It Is Use Create The Skeltron
-              Of Web Pages</p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see ">Contact me</a>
-          </div>
-        </div>
-      </div>
-      <div class=" col-lg-4 pb-2">
-        <div class="card">
-          <img class="card-img-top" src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/CSS%203.png"
-            alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title text-primary  fw-bold">CSS3</h4>
-            <p class="card-text fs-5 web">Cascading Style Sheets (CSS) Is A Style Sheet Language Used For Describing The
-              Presentation Of A Document Written In A Markup Language Such As HTML Or XML.It Adds More Beauty On Pages
-            </p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see ">Contact me</a>
-          </div>
-        </div>
-      </div>
-      <div class=" col-lg-4 pb-2">
-        <div class="card">
-          <img class="card-img-top" src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/bootstraps.jpg"
-            alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title text-primary  fw-bold">Bootstraps 5</h4>
-            <p class="card-text fs-5 web">Bootstrap Is A Free And Open-Source CSS Framework Directed At Responsive,
-              Mobile-First Front-End Web Development. It Contains HTML, CSS And (Optionally) JavaScript-Based Design
-              Templates</p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see ">Contact me</a>
+            <h5 class="card-title text-primary fw-bold">Ecommerce Management</h5>
+            <p class="card-text">Dynamic e-commerce site with product, order, and user management.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class=" col-lg-4 pb-2 ">
-        <div class="card">
-          <img class="card-img-top" src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/PHP_logo.png"
-            alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title text-primary fw-bold">Php</h4>
-            <p class="card-text fs-5 ms-2 web">A Popular General-Purpose Scripting Language That Is Especially Suited To
-              Web Development. Fast, Flexible And Pragmatic, PHP Powers Everything From Your Blog To The Most Popular
-              Websites In The World.</p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see fw-bold ">Contact me</a>
-          </div>
-        </div>
-      </div>
-      <div class=" col-lg-4 pb-2">
-        <div class="card">
-          <img class="card-img-top" src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/mysql.png"
-            alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title text-primary  fw-bold">My Sql</h4>
-            <p class="card-text fs-5 web">MySQL Is Popular Among All Databases, And Is Ranked As The 2nd Most
-              Populardatabase, Only Slightly Trailing Oracle Database. Among Open Source Databases, MySQL Is The Most
-              Popular Database In Use Today
-            </p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire Me</a>
-            <a href="#" class="btn btn-danger ms-4 see fw-bold ">Contact Me</a>
-          </div>
-        </div>
-      </div>
-      <div class=" col-lg-4 pb-2">
-        <div class="card">
-          <img class="card-img-top"
-            src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/Java_(programming_language)-Logo.wine.png"
-            alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title text-primary  fw-bold">Java Programming</h4>
-            <p class="card-text fs-5 web">Java Is A High-Level, Class-Based, Object-Oriented Programming Language That
-              Is Designed To Have As Few Implementation Dependencies As Possible. It Is A General-Purpose Programming
-            </p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see fw-bold ">Contact me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</section>
 
-
-  <h2 class="text-center mt-5 fw-bold" id="de">My Projects</h2>
-  <div class="container mt-5">
-    <div class="row">
-      <div class=" col-lg-4 pb-2 ">
-        <div class="card">
-          <img class="card-img-top" src="https://ratnesh-kumar-tiwari.github.io/portfolio/img/20portfolio_202.jpg"
-            alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title text-primary fw-bold">Design Multiple Portfolio</h4>
-            <p class="card-text fs-5 ms-2 web">A Portfolio Website Is A Unique Way To Showcase Your Work And Let Others
-              Know About Yourself.In Addition, It’s One Of The Best Ways To Express Your Personality, Experience, And
-              Capabilities.</p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see fw-bold ">Contact me</a>
+<!-- ===== Contact ===== -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 mb-4">
+        <h2 class="fw-bold mb-3">Get in Touch</h2>
+        <p>Have a project or idea? Let’s connect and make it happen.</p>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6"><input type="text" class="form-control" placeholder="Name"></div>
+            <div class="col-md-6"><input type="email" class="form-control" placeholder="Email"></div>
+            <div class="col-12"><input type="text" class="form-control" placeholder="Mobile"></div>
+            <div class="col-12"><textarea class="form-control" rows="4" placeholder="Message"></textarea></div>
+            <div class="col-12"><button class="btn btn-primary px-4">Submit</button></div>
           </div>
-        </div>
+        </form>
       </div>
-      <div class=" col-lg-4 pb-2">
-        <div class="card">
-          <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg"
-            alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title text-primary  fw-bold f-5">Student Information System</h4>
-            <p class="card-text fs-5 web">Student Information System Is A Non Removable student Pattern Of Today’s Life.
-              We Need More Time Saving And More Accurate student System As The Number Of Applicants Is Increasing Day By
-              Day.
-            </p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire Me</a>
-            <a href="#" class="btn btn-danger ms-4 see fw-bold ">Contact Me</a>
-          </div>
-        </div>
-      </div>
-      <div class=" col-lg-4 pb-2">
-        <div class="card">
-          <img class="card-img-top"
-            src="https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg?w=2000"
-            alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title text-primary  fw-bold">Ecommerce Management Design </h4>
-            <p class="card-text fs-5 web">Web Development Refers To The Creating, Building, And Maintaining Of Websites.
-              It Includes Aspects Such As Web Design, Web Publishing, Web Programming, And Database Management Web
-              Programming, And Database </p>
-            <a href="#" class="btn btn-danger px-3 fw-bold se">Hire me</a>
-            <a href="#" class="btn btn-danger ms-4 see fw-bold ">Contact me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-lg-7">
-        <h1 class="ps-3 fw-bold"id="gh">Get in touch</h1>
-        <p class="ps-3 fw-normal fs-5">What do you think is better to receive after each lesson: a lovely looking badge
-          or important skills you can immediately put into practice.</p>
-        <div class="row ps-3">
-          <div class="col-lg-4 mb-4">
-            <input type="text" class="form-control fw-bold" placeholder="Name" name="First name">
-          </div>
-          <div class="col-lg-4 mb-4">
-            <input type="text" class="form-control fw-bold" placeholder="Email" name="Last name">
-          </div>
-          <div class="col -lg-4 mb-4">
-            <input type="text" class="form-control fw-bold" placeholder="mobile" name="Last name">
-          </div>
-        </div>
-        <div class="col-lg-12 mt-3 ps-3">
-          <textarea name="message" id="" cols="50" rows="5" class="form-control fw-bold"
-            placeholder="Message"></textarea>
-        </div>
-        <div class="col -lg-12 mt-3 ps-3">
-          <input type="submit" class="btn btn-success se" placeholder="mobile" name="Last name" value="Submit">
-        </div>
-      </div>
-      
-      <div class="col-lg-5 d-flex  justify-content-center">
-  
-        <ul class="list-unstyled">
-        <li> <a href="tel: +91 9693852800"><i class="fa fa-phone ps-3 fs-3 text-dark  p-3 mb-4">
-              +91-9693852800</i></a>
-
-        </li>
-        <li> <a href="mailto:sk6967451@gmail.com" ><i
-              class="fa fa-envelope ps-3 fs-3 text-dark  p-3"> sk6967451@gmail.com</i></a>
-        </li>
+      <div class="col-lg-5">
+        <ul class="list-unstyled fs-5">
+          <li class="mb-3"><i class="fa fa-phone me-2"></i> +91-9693852800</li>
+          <li><i class="fa fa-envelope me-2"></i> sk6967451@gmail.com</li>
         </ul>
       </div>
     </div>
   </div>
+</section>
 
-  <div class=" footer mt-5 ">
-    <p class="text-center text-white fs-5">Copyrights 2023 Santosh Kumar.com All rights reserved.</p>
-    <h2 class="text-center py-2 text-white">Follow Me On</h2>
-    <div class="d-flex justify-content-center py-2">
-      <a href="" class="ms-3 "><i class="fa fa-facebook  bg-primary px-3 text-white fs-2 pt-2"></i></a>
-      <a href="" class="ms-3"><i class="fa fa-twitter  bg-primary px-3 text-white fs-2 pt-2"></i></a>
-      <a href="" class="ms-3"><i class="fa fa-instagram  bg-primary px-3 text-white fs-2 pt-2"></i></a>
-      <a href="" class="ms-3"><i class="fa fa-google  bg-primary px-3 text-white fs-2 pt-2"></i></a>
-
-    </div>
+<!-- ===== Footer ===== -->
+<footer class="footer text-center text-white">
+  <p class="mb-2">© 2025 Santosh Kumar. All rights reserved.</p>
+  <div class="d-flex justify-content-center gap-3">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
   </div>
+</footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
